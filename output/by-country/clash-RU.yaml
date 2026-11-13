@@ -12,40 +12,26 @@ proxies:
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 188.225.37.175
-  port: 443
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cryptoventura.online
-  network: ws
-  ws-opts:
-    path: /api/de3/live
-    headers:
-      Host: cryptoventura.online
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
-  server: 38.60.223.125
-  port: 13108
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 188.225.37.43
+  server: 185.178.208.167
   port: 443
-  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: torvani.cyou
+  servername: mbr.rkn-pediki.site
   network: ws
   ws-opts:
-    path: /api/boards/live
+    path: /session
     headers:
-      Host: torvani.cyou
+      Host: mbr.rkn-pediki.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
 rules:
 - MATCH,PROXIES
